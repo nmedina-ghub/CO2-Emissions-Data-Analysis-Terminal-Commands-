@@ -61,14 +61,22 @@ safe peek at it — not the whole 254-row file, just the **first 5 lines**,
 enough to see the shape of it without scrolling past everything.
 
 ```bash
+cd data
 head -n 5
 co2_emissions_2022.csv
 ```
 
 **Output:**
 _TODO: paste what you actually got_
+country,iso_code,year,population,gdp,co2
+Afghanistan,AFG,2022,40578847,53303471617,10.170
+Africa,,2022,1445862695,,1459.114
+Africa (GCP),,2022,,,1459.103
+Albania,ALB,2022,2827614,36171005594,4.498
 
 **What I notice:** _TODO — your raw observations, in your own words_
+I noticed there are 6 columns of data for each country.
+I noticed there is missing data for the country Africa.
 
 ## 2. Column names
 
@@ -76,12 +84,11 @@ Next you want to see just the column names by themselves — one per line is
 a lot easier to scan than one long comma-separated row.
 
 ```bash
-# TODO: a command (or combination of commands) that prints just the header
-# row, one column name per line
+
 ```
 
 **Output:**
-_TODO_
+
 
 ## 3. Column-by-column data type table
 
