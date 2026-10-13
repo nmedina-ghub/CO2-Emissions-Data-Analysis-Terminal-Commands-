@@ -49,7 +49,10 @@ this repo up (see `README.md`) — `git init`/clone, creating your
 reconstruct it from memory at the end.
 
 ```bash
-# TODO: the commands you actually ran to set up this repo
+git clone <repo>
+cd <repo>
+head -n 5
+co2_emissions_2022.csv
 ```
 
 ## 1. First look at the raw file
