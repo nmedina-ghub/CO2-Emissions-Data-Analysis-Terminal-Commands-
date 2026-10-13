@@ -49,10 +49,9 @@ this repo up (see `README.md`) — `git init`/clone, creating your
 reconstruct it from memory at the end.
 
 ```bash
+mkdir <repo name>
 git clone <repo>
 cd <repo>
-head -n 5
-co2_emissions_2022.csv
 ```
 
 ## 1. First look at the raw file
@@ -62,7 +61,8 @@ safe peek at it — not the whole 254-row file, just the **first 5 lines**,
 enough to see the shape of it without scrolling past everything.
 
 ```bash
-# TODO: a command that prints just the first 5 lines of the raw file
+head -n 5
+co2_emissions_2022.csv
 ```
 
 **Output:**
