@@ -184,14 +184,16 @@ curious to explore using this data? Pick two specific countries you're
 curious to compare, and look up their full rows.
 
 ```bash
-# TODO: a command that finds a specific country's row by name (repeat for
-# a second country of your choice)
+Im curious to explore the awk command to seperate and skim threw data sets efficiently and run other commands/codes with them.
+I would also like to look at and compare Sudan and South Sudan because they're so close to eachother.
+grep "Sudan" co2_emissions_2022.csv 
 ```
 
 **Output:**
-_TODO_
+South Sudan,SSD,2022,11021175,,1.634
+Sudan,SDN,2022,49383344,,17.529
 
-**My question:** _TODO_
+**My question:** What are the GDPs of Sudan and South Sudan and how do they compare?
 
 ## 8. AI-literacy reflection
 
@@ -202,10 +204,10 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
-1. _TODO_
-2. _TODO_
+1. You risk typing in the wrong row or file type, and may get an answer that is confident but wrong.
+2. You risk not understanding the answers you get, and it may leave you with less to question about the data.
 
-**My rule:** _TODO_
+**My rule:** When using terminal and uncovering new data I will always do my job to read over the data and make sure it makes sense before I continue, aswell as when I get results double checking to make sure I get the correct results from each row or column im looking at.
 
 ## 9. Something that went wrong (and how you figured it out)
 
@@ -216,10 +218,11 @@ this at least once. Paste the actual command and what actually happened
 fix — not "I googled it and it worked."
 
 ```bash
-# TODO: a command that errored, or gave you unexpected results
+A command that had an error for me was grep my issue was trying to look at both sets at once but not adding them in the same quotations but then figuring out the word Sudan alone was enough for both of them to pop up anyways after trying to do it manually.
 ```
 
 **What happened:**
-_TODO: the actual error message, or the unexpected output you got_
+Marcy_Student@MARCY-MBAir18 data % grep "Sudan " | "South Sudan " co2_emissions_2022.csv
+zsh: command not found: South Sudan 
 
-**What it told me and how I fixed it:** _TODO_
+**What it told me and how I fixed it:** It told me I entered something wrong and when I tried a more complex way so I simplified it and everything fell into place. Instead of combining both Sudan and South Sudan under one quotation I just used the word Sudan to get both on accident.
