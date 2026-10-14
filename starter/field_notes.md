@@ -226,3 +226,9 @@ Marcy_Student@MARCY-MBAir18 data % grep "Sudan " | "South Sudan " co2_emissions_
 zsh: command not found: South Sudan 
 
 **What it told me and how I fixed it:** It told me I entered something wrong and when I tried a more complex way so I simplified it and everything fell into place. Instead of combining both Sudan and South Sudan under one quotation I just used the word Sudan to get both on accident.
+
+## Above and Beyond
+
+**Chain terminal commands**
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f1
+
