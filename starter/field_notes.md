@@ -130,7 +130,7 @@ The difference between a list/array and a table is the fact that there are rows 
 
 State whether this dataset is structured or unstructured, and why.
 
-Structured data because it has values that specifically follow an organized pattern under each column type.
+Semi structured data or Unstructured data because it has values that specifically follow an organized pattern under each column type but there are some outliars that make it unstructured. For example data rows 107 and 108 do not list a country under the country column but the majority of the data does.
 
 ## 5. Before you trust this data
 
