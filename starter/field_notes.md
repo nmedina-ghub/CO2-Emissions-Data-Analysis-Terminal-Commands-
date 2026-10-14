@@ -174,7 +174,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-_TODO_
+Is there a reason or explanation for data missing? And what structure does this dataset actually follow?
 
 ## 7. Something you're actually curious about
 
