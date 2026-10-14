@@ -164,7 +164,7 @@ dataset was collected, before trusting any conclusion drawn from it — ground
 at least one in the counts you just found.
 
 **My 2 concerns:**
-1. Where did all this data come from?
+1. Why is the data mixed up? Where did it come from?
 2. Why is there so much data missing?
 
 ## 6. Data-quality question for the source
