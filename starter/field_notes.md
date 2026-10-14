@@ -84,10 +84,13 @@ Next you want to see just the column names by themselves — one per line is
 a lot easier to scan than one long comma-separated row.
 
 ```bash
+cd data
+head -n 1 co2_emissions_2022.csv
 
 ```
 
 **Output:**
+country,iso_code,year,population,gdp,co2
 
 
 ## 3. Column-by-column data type table
@@ -98,8 +101,11 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 `population`=4, `gdp`=5, `co2`=6.
 
 ```bash
-# TODO: a command that prints the first 6 values from a single column
-# (repeat this for at least 5 of the 6 columns, swapping in each column's number)
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f1
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f2
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f3
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f4
+head -n 6 co2_emissions_2022.csv | cut -d ',' -f5
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
@@ -107,24 +113,24 @@ name alone:
 
 | Column | Inferred type | How I can tell |
 |---|---|---|
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
+|country|string|I can tell because the data is written in text|
+|iso_code|string|I can tell because the data is written in text|
+|year|integer|I can tell because the data is written in whole numbers|
+|population|integer|I can tell because the data is written in whole numbers|
+|gdp|integer|I can tell because the data is written in whole numbers|
 
 **In your own words:** what's the actual difference between a list/array
 and a table? (Not a definition you looked up — explain it the way you'd
 explain it to a friend who's never coded. No command needed for this one,
 just think about the table you just filled in above.)
 
-_TODO_
+The difference between a list/array and a table is the fact that there are rows and columns involved with tables and list/arrays arent as structured they dont need rows or columns.
 
 ## 4. Structured or unstructured?
 
 State whether this dataset is structured or unstructured, and why.
 
-_TODO_
+Structured data because it has values that specifically follow an organized pattern under each column type.
 
 ## 5. Before you trust this data
 
@@ -136,8 +142,7 @@ You may need more than one command for this — piping (`|`) feeds one
 command's output into the next as input.
 
 ```bash
-# TODO: a command (or combination) that counts how many rows have a
-# BLANK iso_code
+awk -F',' '$6 == "" {print "Missing data at line: " NR}' co2_emissions_2022.csv
 ```
 
 **Output:**
