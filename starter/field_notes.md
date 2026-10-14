@@ -62,19 +62,17 @@ enough to see the shape of it without scrolling past everything.
 
 ```bash
 cd data
-head -n 5
-co2_emissions_2022.csv
+head -n 5 co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO: paste what you actually got_
 country,iso_code,year,population,gdp,co2
 Afghanistan,AFG,2022,40578847,53303471617,10.170
 Africa,,2022,1445862695,,1459.114
 Africa (GCP),,2022,,,1459.103
 Albania,ALB,2022,2827614,36171005594,4.498
 
-**What I notice:** _TODO — your raw observations, in your own words_
+**What I notice:** 
 I noticed there are 6 columns of data for each country.
 I noticed there is missing data for the country Africa.
 
