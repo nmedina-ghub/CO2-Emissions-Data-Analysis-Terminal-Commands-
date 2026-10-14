@@ -142,26 +142,30 @@ You may need more than one command for this — piping (`|`) feeds one
 command's output into the next as input.
 
 ```bash
-awk -F',' '$6 == "" {print "Missing data at line: " NR}' co2_emissions_2022.csv
+awk -F',' '$2 == "" {print "Missing data at line: " NR}' co2_emissions_2022.csv > missingdata.csv
+cat missingdata.csv
+wc -l missingdata.csv
 ```
 
 **Output:**
-_TODO_
+36 missingdata.csv
 
 ```bash
-# TODO: the same idea, but for the gdp column
+awk -F',' '$5 == "" {print "Missing data at line: " NR}' co2_emissions_2022.csv > missinggdp.csv
+cat missinggdp.csv
+wc -l missinggdp.csv
 ```
 
 **Output:**
-_TODO_
+89 missinggdp.csv
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
 at least one in the counts you just found.
 
 **My 2 concerns:**
-1. _TODO_
-2. _TODO_
+1. Where did all this data come from?
+2. Why is there so much data missing?
 
 ## 6. Data-quality question for the source
 
