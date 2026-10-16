@@ -36,6 +36,8 @@ What's something about energy and emissions you're personally curious to explore
 
 Im curious which countries or regions have the highest ammounts of emissions of CO2, and how many are connected to energy usage.
 
+Stakeholder: Simulated Non Profit
+
 **License:** CC BY 4.0 — Our World in Data. Attribution: Our World in Data,
 based on the Global Carbon Project and other sources
 
