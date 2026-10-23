@@ -34,7 +34,7 @@ Was this source an official website?
 
 What's something about energy and emissions you're personally curious to explore in this data?
 
-Im curious which countries or regions have the highest ammounts of emissions of CO2, and how many are connected to energy usage.
+Im curious which countries or regions have the highest amounts of emissions of CO2, and how many are connected to energy usage.
 
 Stakeholder: Simulated Non Profit
 
